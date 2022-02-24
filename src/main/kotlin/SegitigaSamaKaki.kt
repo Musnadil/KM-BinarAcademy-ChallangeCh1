@@ -1,4 +1,18 @@
 class SegitigaSamaKaki {
+    fun nomer1(){
+        print("Masukan berapa kali looping yang anda inginkan untuk segitiga sama kaki: ")
+        val loop = readLine()
+        if (loop != null){
+            if (validate.isNumber(loop)){
+                soal1(loop.toInt())
+            }else{
+                nomer1()
+            }
+        }else{
+            nomer1()
+        }
+    }
+
     fun soal1(loop : Int){
         println("soal nomer 1 : Pola Segitiga Sama Kaki Bintang")
 
